@@ -4,13 +4,13 @@ from datetime import datetime, timedelta
 import csv
 import os
 
-# === CONFIGURATION ===
+# === CONFIGURATION ====
 csv_path = os.path.expanduser("~/Documents/Peptide_Log.csv")
 profile_path = os.path.expanduser("~/Documents/Peptide_Profiles.txt")
 last_calc = {}
 vial_usage = {}  # Tracks doses per vial
 
-# === CORE FUNCTIONS ===
+# === CORE FUNCTIONS ====
 def calculate_dose(total_mcg, bac_ml, dose_mcg, vial_name):
     concentration = total_mcg / bac_ml
     dose_volume_ml = round(dose_mcg / concentration, 3)
