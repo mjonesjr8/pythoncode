@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 from matplotlib.dates import date2num
 from tkcalendar import DateEntry
 
-# === SPLASH / DISCLAIMER ===
+# === SPLASH / DISCLAIMER ====
 def show_splash(root):
     splash = tk.Toplevel(root)
     splash.title("Research Use Disclaimer")
